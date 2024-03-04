@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,300;0,500;0,600;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Salsa&display=swap')
+;
+:root {
+    --background:#afadaa;
+    --text-withe:#ffffff;
+    --text-black:#000000;
+    --button:#9eb51d;
+    --line:rgb(174, 6, 6);
+    --header:#24221d;
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none;
+}
+body
+  {  font-family: "Salsa", cursive;
+  font-weight: 400;
+  font-style: normal;
+   
+    background:  var(--background) ;
+   
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    padding: 0px 30px 0px 30px;
+    height: 65px;
+    background:linear-gradient(to top,var(--background),var(--header));
+}
+.icon{
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon img{
+    height: 100px;
+
+}
+
+.Nav, .Nav-list{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+.Nav-list{
+    gap: 30px;
+    cursor: pointer;
+   
+
+}
+.Nav-list a
+{
+    color: var(--text);
+    text-decoration: none;
+    font-size: 18px
+    }
+    
+.Nav-list li:first-child > a {
+    color: var(--button);
+    font-weight: 600;
+}
+.Nav{
+    gap: 150px;
+}
+
+
+/* Inicio */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-black);
+    width: 100%;
+    background-color: var(--background);
+
+}
+
+#Inicio{
+    margin-top: 65px;
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #Inicio h2{
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+    #Inicio p{
+        text-align: center;
+        line-height: 1.5;
+      
+        font-size: 24px;
+        }
+
+
+.img-gym img{
+    background-color:var(--header);
+    padding: 20px 20px;
+    height:400px;
+    width: 600px;
+    margin: auto;
+    border-radius: 40px;
+    border-color: transparent;
+
+}
+.Imagen-gym{
+    border-radius: 100%;
+}
+a{
+    color: #000000;
+    font-weight: 800;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ h2 span{
+    -webkit-text-fill-color: var(--button);
+    -webkit-text-stroke: 2px var(--text-black);
+}
+
+/* Sobre Nosotros */
+
+#Sobre-Nosotros{
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+#Sobre-Nosotros h2{
+   
+    font-size:40px;
+    margin-bottom: 20px;
+   
+    }
+    .Nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .Nosotros p{
+        line-height: 30px;  
+        font-size: 20px;
+        
+        }
+
+        .Pibes{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            
+        }
+        .Estrellas{
+            border-radius:50px;
+            background-color:var(--button);
+            border: var(--header) solid 6px ;
+           
+         
+           
+        }
+
+        .Estrellas{
+            width: 276px;
+            height: 290px;
+            padding: 200px 40px;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 50px;
+          
+            
+           
+        }
+        .Pibes img{
+            height: 200px;
+            border-radius:100% ;
+        }
+
+
+        /* Planes */
+
+        #Planes{
+            width: 83%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 100px;
+            gap: 50px;
+        }
+
+        .Ofertas{
+            
+    display: grid;
+    grid-template-columns: 400px repeat(3,1fr);
+    gap: 2rem;
+    margin-bottom: 100px;
+        }
+        .Ofertas h3{ 
+            font-size: 40px;
+        }
+
+        .Mensualidad{
+         padding: 10px 20px;
+         background-color:var(--text-black);
+         border-radius: 20px;
+         border: var(--button) solid 6px;
+         color: var(--button);
+        }
+        .Beneficios{
+            display: flex;
+            flex-direction: column;
+           justify-content: space-between;
+           gap: 30px;
+            font-size:20px;
+            margin-bottom: 20px;
+            }   
+        .Mensualidad h4{
+            margin-bottom: 20px;
+        }
+        .Beneficios a{
+            font-weight: 200;
+          color: var(--text-withe);  
+          text-decoration: none;
+          
+            transition: all .3s ease-in-out;  
+
+        }
+        button{
+            align-self: center;
+            font-weight: 900;
+           color: var(--text-black);
+           display: flex;
+           justify-content: center;
+           align-items: center;                 
+           border: none;
+           cursor: pointer;
+           padding: 10px 70px;
+           border-radius: 8px;
+           box-shadow: rgba(99, 99, 99,  0.2) 0px 5px 15px -5px;
+            }
+
+            /* Contacto */
+
+            #Contacto{
+                display: flex   ;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-around;  
+                gap: 60px;
+            }
+
+            #Contacto h4{
+                font-size: 30px;
+
+            }
+            .Redes{
+               
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                font-size: 30px;
+
+            }
+
+            /* Footer */
+
+            footer {
+                background:linear-gradient(to top,var(--header),var(--background));
+                text-align: center; 
+                color: var(--text-black);
+                padding: 20px;
+                margin-top: auto;       /* Para que el footer esté al final             
+                de la página (si no      hay contenido)*/
+                }
+        
