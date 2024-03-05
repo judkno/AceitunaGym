@@ -219,11 +219,10 @@ a{
         }
 
         .Ofertas{
-            
-    display: grid;
-    grid-template-columns: 400px repeat(3,1fr);
-    gap: 2rem;
-    margin-bottom: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
         }
         .Ofertas h3{ 
             font-size: 40px;
@@ -303,4 +302,59 @@ a{
                 margin-top: auto;       /* Para que el footer esté al final             
                 de la página (si no      hay contenido)*/
                 }
-        
+
+
+
+                /* Resposiv Tablet*/
+                @media (max-width:990px){
+                    .Ofertas{
+                        flex-wrap: wrap;
+
+                     }
+
+                     
+                    }
+
+
+                    /* Responsiv  Mobile*/
+
+                    @media (max-width:600px){
+                        /* Header */
+                        .Nav-list{
+                            display: none;
+                        }
+                        .icon{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 40px;
+
+                        }
+
+                        .icon h1{
+                            font-size: 20px;
+                        }
+                        #Inicio h2{
+                            font-size: 40px;
+                        }
+                       .img-gym img{
+                        height: 250px;
+                        width: 340px;
+                        
+               }
+               .Nosotros p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+               }
+
+               #Contacto h4{
+                display: flex;
+                text-align: center;
+               }
+               .Redes{
+                flex-direction: column;
+               }
+
+         }
